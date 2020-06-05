@@ -13,7 +13,7 @@
         "source_ami": "{{user `ami_id`}}",
         "instance_type": "t2.medium",
         "ami_name": "{{user `app_name`}}_{{ isotime \"200601021504\" }}",
-        "ssh_username": "testuser",
+        "ssh_username": "ubuntu",
         "security_group_id": "sg-xxxxx",
         "ssh_pty": "true",
         "tags": {
