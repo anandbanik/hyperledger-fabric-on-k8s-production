@@ -1,0 +1,6 @@
+#!/bin/bash
+export CLOUD_ENVIRONMENT={{ env }}
+export CLOUD_APP={{ app_name }}
+export EC2_REGION={{ region }}
+export CLOUD_CANARY={{ canary }}
+printenv | grep 'CLOUD\|EC2' | awk '$0="export "$0' >> /etc/cloud_env

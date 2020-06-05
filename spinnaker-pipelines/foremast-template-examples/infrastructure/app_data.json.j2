@@ -1,0 +1,23 @@
+{
+"job": [
+    {%for account in appinfo.accounts %}
+    {
+        "type":"createApplication",
+        "account":"{{ account.name }}",
+        "application":{
+            "cloudProviders":"aws",
+            "name": "{{ appinfo.app }}",
+            "email": "{{ appinfo.email }}",
+            "repoType": "github",
+            "repoProjectKey": "{{ appinfo.project }}",
+            "repoSlug": "{{ appinfo.repo }}",
+            "platformHealthOnlyShowOverride": true
+        },
+        "user":"foremast"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+"application": "{{ appinfo.app }}",
+"description": "Created application {{ appinfo.app }}"
+}
+

@@ -1,0 +1,34 @@
+{
+    "application": "{{ app }}",
+    "description": "Create Security Group: {{ app }}",
+    "job": [
+        {
+            "credentials": "{{ env }}",
+            "description": "{{ description }}",
+            "detail": "",
+            "name": "{{ app }}",
+            "regions": [
+                "{{ region }}"
+            ],
+            "securityGroupIngress": [
+                {% for rule in ingress %}
+                {
+                    "name": "{{ rule.app }}",
+                    "type": "{{ rule.protocol }}",
+                    "startPort": {{ rule.start_port }},
+                    "endPort": {{ rule.end_port }}
+                    {% if rule.cross_account_env %}
+                      ,
+                      "accountName": "{{ rule.cross_account_env }}",
+                      "vpcId": "{{ rule.cross_account_vpc_id }}"
+                    {% endif %}
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "subnet": "none",
+            "type": "upsertSecurityGroup",
+            "user": "foremast",
+            "vpcId": "{{ vpc }}"
+        }
+    ]
+}

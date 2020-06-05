@@ -1,0 +1,46 @@
+{
+   "application":"{{ app }}",
+   "description":"Upsert scaling policy",
+   "job":[
+      {
+         "name":"{{ app }}-{{ scaling_policy.metric }}-{{ operation }}",
+         "serverGroupName":"{{ server_group }}",
+         "credentials":"{{ env }}",
+         "region":"{{ region }}",
+         "provider":"aws",
+         "adjustmentType":"ChangeInCapacity",
+         "alarm":{
+            "name":"{{ app }}-{{ scaling_policy.metric }}-{{ operation }}",
+            "region":"{{ region }}",
+            "actionsEnabled":true,
+            "comparisonOperator":"{{ comparisonOperator }}",
+            "dimensions":[
+               {
+                  "name":"AutoScalingGroupName",
+                  "value":"{{ server_group }}"
+               }
+            ],
+            "evaluationPeriods":1,
+            "period":{{ period_sec }},
+            "threshold":{{ scaling_policy.threshold }},
+            "namespace":"AWS/EC2",
+            "metricName":"{{ scaling_policy.metric | default("CPUUtilization") }}",
+            "statistic":"{{ scaling_policy.statistic | default("Average") }}",
+            "alarmActionArns":[],
+            "insufficientDataActionArns":[]
+         },
+         "step":{
+            "estimatedInstanceWarmup":600,
+            "metricAggregationType":"{{ scaling_policy.statistic | default("Average") }}",
+            "stepAdjustments":[
+               {
+                  "scalingAdjustment":{{ scalingAdjustment }},
+                  "metricIntervalLowerBound":0
+               }
+            ]
+         },
+         "type":"upsertScalingPolicy",
+         "user":"foremast"
+      }
+   ]
+}

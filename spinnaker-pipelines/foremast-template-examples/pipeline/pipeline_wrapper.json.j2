@@ -1,0 +1,34 @@
+{
+  "name": "{{ data.app.appname }} [{{ data.app.region }}]",
+  {% if data.id %}
+  "id": "{{ data.id }}",
+  {% endif %}
+  "application": "{{ data.app.appname }}",
+  "triggers": [
+    {% include "pipeline/trigger-jenkins.json.j2" %}
+  ],
+  "limitConcurrent": false,
+  "parallel": true,
+  "notifications": [
+    {
+      "level": "pipeline",
+      "when": [
+        "pipeline.failed"
+      ],
+      "type": "slack",
+      "address": "{{ data.app.slack }}"
+    },
+    {
+      "level": "pipeline",
+      "when": [
+        "pipeline.failed"
+      ],
+      "type": "email",
+      "address": "{{ data.app.email }}"
+    }
+  ],
+  "stages": [
+    {% include "pipeline/stage-bake.json.j2" %},
+    {% include "pipeline/stage-tagger.json.j2" %}
+  ]
+}

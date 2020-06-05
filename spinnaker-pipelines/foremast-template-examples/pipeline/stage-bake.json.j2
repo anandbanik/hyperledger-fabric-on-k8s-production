@@ -1,0 +1,34 @@
+
+    {
+      "requisiteStageRefIds": [],
+      "refId": "1",
+      "type": "bake",
+      "name": "Bake [{{ data.app.region }}]",
+      "cloudProviderType": "aws",
+      "extendedAttributes": {
+        "app_group": "${ trigger.properties.GROUP_NAME }",
+        "app_name": "${ trigger.properties.APP_NAME }",
+        "appversion": "${ trigger.properties.APP_VERSION }",
+        "root_volume_size": "{{ data.app.root_volume_size }}"
+      },
+      "regions": ["{{ data.app.region }}"],
+      "user": "[anonymous]",
+      "vmType": "hvm",
+      "storeType": "ebs",
+      "baseOs": "custom",
+      "baseLabel": "release",
+      "showAdvancedOptions": true,
+      "overrideTimeout": true,
+      "stageTimeoutMs": 900000,
+      "sendNotifications": false,
+      "notifications": [],
+      "restrictExecutionDuringTimeWindow": false,
+      "restrictedExecutionWindow": {
+        "whitelist": []
+      },
+      "enhancedNetworking": true,
+      "comments": "Baking",
+      "package": "${ trigger.properties.ARTIFACT_RPM }",
+      "templateFileName": "{{ data.app.ami_template_file }}",
+      "baseAmi": "{{ data.app.ami_id }}"
+    }
