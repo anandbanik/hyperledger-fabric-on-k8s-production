@@ -1,0 +1,38 @@
+{
+    "variables": {
+      "app_name": "{{ env `APP_NAME` }}",
+      "ami_id": "ami-0c322300a1dd5dc79",
+      "build_version": "{{ env `BUILD_VERSION` }}"
+    },
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "vpc_id": "vpc-xxxxxx",
+        "subnet_id": "subnet-xxxxxx",
+        "region": "us-east-1",
+        "source_ami": "{{user `ami_id`}}",
+        "instance_type": "t2.medium",
+        "ami_name": "{{user `app_name`}}_{{ isotime \"200601021504\" }}",
+        "ssh_username": "testuser",
+        "security_group_id": "sg-xxxxx",
+        "ssh_pty": "true",
+        "tags": {
+          "os_version": "ubuntu",
+          "build_version": "{{ user `build_version` }}",
+          "app_name": "{{user `app_name`}}",
+          "base_ami_name": "{{ .SourceAMIName }}",
+          "environment": "production"
+        }
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "ansible",
+        "playbook_file": "../../../ansible_playbooks/applications/test-application/production.yml",
+        "ansible_env_vars": [
+          "ANSIBLE_HOST_KEY_CHECKING=False"
+        ]
+      }
+    ]
+  }
+  
