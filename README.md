@@ -9,7 +9,7 @@ Describe the problem(s) this project solves. Describe how this software can impr
 ## Technology stack: 
 Indicate the technological nature of the software, including primary programming language(s) and whether the software is intended as standalone or as a module in a framework or other ecosystem.
   
-* [Amazon Web Services] and Azue Cloud (MS Azure)
+* [Amazon Web Services] and [MS Azure]
 * [Ansible]
 * [Docker]
 * [Jenkins]
@@ -116,5 +116,6 @@ General instructions on _how_ to contribute should be stated with a link to [CON
    [Terraform]: <https://www.terraform.io/>
    [Terragrunt]: <https://terragrunt.gruntwork.io/>
    [YAML]: <https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html>
+   [MS Azure]: <https://azure.microsoft.com/en-in/>
    [Sanu Satyadarshi]: <https://github.com/sanusatyadarshi>
    [Roland Bole]: <https://github.com/samlinux>
