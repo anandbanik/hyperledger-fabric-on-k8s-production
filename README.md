@@ -1,6 +1,7 @@
 # Hyperledger Fabric on Production Kubernetes
 
-** Maintainers**: sanusatyadarshi
+**Maintainers**: [Sanu Satyadarshi], samlinux
+
 **Description**: CI/CD pipeline using Jenkins, Packer, Ansible, Terraform and Spinnaker to create one click deployment of production grade Hyperledger Fabric network on Kubernetes.
 
 Describe the problem(s) this project solves. Describe how this software can improve the lives of its audience.
@@ -115,3 +116,4 @@ General instructions on _how_ to contribute should be stated with a link to [CON
    [Terraform]: <https://www.terraform.io/>
    [Terragrunt]: <https://terragrunt.gruntwork.io/>
    [YAML]: <https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html>
+   [Sanu Satyadarshi]: <https://github.com/sanusatyadarshi>
