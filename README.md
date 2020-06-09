@@ -10,14 +10,14 @@ Indicate the technological nature of the software, including primary programming
   
 * [Amazon Web Services] and Azue Cloud (MS Azure)
 * [Ansible]
-* Docker
-* Kubernetes
-* Molecule( for Ansible modules)
-* Jenkins
-* Packer
-* Python
-* Shell Scripts
-* Spinnaker
+* [Docker]
+* [Jenkins]
+* [Kubernetes]
+* [Molecule]( for Ansible modules)
+* [Packer]
+* [Python]
+* [Shell Script]
+* [Spinnaker]
 * Terraform 
 * Terragrunt
 * YAML
@@ -104,14 +104,11 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 
    [Ansible]: <https://www.ansible.com/>
    [Amazon Web Services]: <https://aws.amazon.com/>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+   [Docker]: <https://www.docker.com/>
+   [Jenkins]: <https://www.jenkins.io/>
+   [Kubernetes]: <https://kubernetes.io/>
+   [Molecule]: <https://molecule.readthedocs.io/en/latest/>
+   [Packer]: <https://www.packer.io/>
+   [Python]: <https://www.python.org/>
+   [Shell Script]: <https://www.shellscript.sh/>
+   [Spinnaker]: <https://www.spinnaker.io/>
