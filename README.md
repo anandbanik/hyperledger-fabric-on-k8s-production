@@ -9,7 +9,7 @@ Describe how this software can improve the lives of its audience.
 Indicate the technological nature of the software, including primary programming language(s) and whether the software is intended as standalone or as a module in a framework or other ecosystem.
   
 * Amazon Web Services (AWS) and Azue Cloud (MS Azure)
-* Ansible
+* [Ansible]
 * Docker
 * Kubernetes
 * Molecule( for Ansible modules)
@@ -98,3 +98,20 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 1. Projects that inspired you
 2. Related projects
 3. Books, papers, talks, or other sources that have meaningful impact or influence on this project
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+
+   [Ansible]: <https://www.ansible.com/>
+   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [john gruber]: <http://daringfireball.net>
+   [df1]: <http://daringfireball.net/projects/markdown/>
+   [markdown-it]: <https://github.com/markdown-it/markdown-it>
+   [Ace Editor]: <http://ace.ajax.org>
+   [node.js]: <http://nodejs.org>
+   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [jQuery]: <http://jquery.com>
+   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
+   [express]: <http://expressjs.com>
+   [AngularJS]: <http://angularjs.org>
+   [Gulp]: <http://gulpjs.com>
