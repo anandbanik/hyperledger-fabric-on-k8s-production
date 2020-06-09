@@ -8,7 +8,7 @@ Describe how this software can improve the lives of its audience.
 ## Technology stack: 
 Indicate the technological nature of the software, including primary programming language(s) and whether the software is intended as standalone or as a module in a framework or other ecosystem.
   
-* Amazon Web Services (AWS) and Azue Cloud (MS Azure)
+* [Amazon Web Services] and Azue Cloud (MS Azure)
 * [Ansible]
 * Docker
 * Kubernetes
@@ -103,7 +103,7 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 
 
    [Ansible]: <https://www.ansible.com/>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [Amazon Web Services]: <https://aws.amazon.com/>
    [john gruber]: <http://daringfireball.net>
    [df1]: <http://daringfireball.net/projects/markdown/>
    [markdown-it]: <https://github.com/markdown-it/markdown-it>
