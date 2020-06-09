@@ -1,9 +1,9 @@
 # Hyperledger Fabric on Production Kubernetes
 
-**Description**:  Put a meaningful, short, plain-language description of what
-this project is trying to accomplish and why it matters.
-Describe the problem(s) this project solves.
-Describe how this software can improve the lives of its audience.
+** Maintainers**: sanusatyadarshi
+**Description**: CI/CD pipeline using Jenkins, Packer, Ansible, Terraform and Spinnaker to create one click deployment of production grade Hyperledger Fabric network on Kubernetes.
+
+Describe the problem(s) this project solves. Describe how this software can improve the lives of its audience.
 
 ## Technology stack: 
 Indicate the technological nature of the software, including primary programming language(s) and whether the software is intended as standalone or as a module in a framework or other ecosystem.
