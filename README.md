@@ -18,9 +18,9 @@ Indicate the technological nature of the software, including primary programming
 * [Python]
 * [Shell Script]
 * [Spinnaker]
-* Terraform 
-* Terragrunt
-* YAML
+* [Terraform] 
+* [Terragrunt]
+* [YAML]
 
 
 
@@ -112,3 +112,6 @@ General instructions on _how_ to contribute should be stated with a link to [CON
    [Python]: <https://www.python.org/>
    [Shell Script]: <https://www.shellscript.sh/>
    [Spinnaker]: <https://www.spinnaker.io/>
+   [Terraform]: <https://www.terraform.io/>
+   [Terragrunt]: <https://terragrunt.gruntwork.io/>
+   [YAML]: <https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html>
