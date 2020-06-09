@@ -5,7 +5,7 @@ this project is trying to accomplish and why it matters.
 Describe the problem(s) this project solves.
 Describe how this software can improve the lives of its audience.
 
-### Technology stack: 
+## Technology stack: 
 Indicate the technological nature of the software, including primary programming language(s) and whether the software is intended as standalone or as a module in a framework or other ecosystem.
   
 * Amazon Web Services (AWS) and Azue Cloud (MS Azure)
@@ -30,7 +30,8 @@ Alpha, Beta, 1.1, etc. It's OK to write a sentence, too. The goal is to let inte
   - Describe what sets this apart from related-projects. Linking to another doc or page is OK if this can't be expressed in a sentence or two.
 
 
-**Screenshot**: If the software has visual components, place a screenshot after the description; e.g.,
+## Screenshot:
+If the software has visual components, place a screenshot after the description; e.g.,
 
 ![](https://raw.githubusercontent.com/cfpb/open-source-project-template/master/screenshot.png)
 
