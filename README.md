@@ -12,6 +12,7 @@ Indicate the technological nature of the software, including primary programming
 * [Amazon Web Services] and [MS Azure]
 * [Ansible]
 * [Docker]
+* [Hyperledger Fabric]
 * [Jenkins]
 * [Kubernetes]
 * [Molecule]( for Ansible modules)
@@ -106,6 +107,7 @@ General instructions on _how_ to contribute should be stated with a link to [CON
    [Ansible]: <https://www.ansible.com/>
    [Amazon Web Services]: <https://aws.amazon.com/>
    [Docker]: <https://www.docker.com/>
+   [Hyperledger Fabric]: <https://www.hyperledger.org/use/fabric>
    [Jenkins]: <https://www.jenkins.io/>
    [Kubernetes]: <https://kubernetes.io/>
    [Molecule]: <https://molecule.readthedocs.io/en/latest/>
