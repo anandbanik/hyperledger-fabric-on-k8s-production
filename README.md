@@ -35,7 +35,7 @@ Alpha, Beta, 1.1, etc. It's OK to write a sentence, too. The goal is to let inte
 ## Screenshot:
 If the software has visual components, place a screenshot after the description; e.g.,
 
-![](https://raw.githubusercontent.com/cfpb/open-source-project-template/master/screenshot.png)
+![](https://sample-image.png)
 
 
 ## Dependencies
