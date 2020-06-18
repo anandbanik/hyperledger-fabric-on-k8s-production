@@ -84,14 +84,14 @@ important pieces, etc.
 
 General instructions on _how_ to contribute should be stated with a link to [CONTRIBUTING](CONTRIBUTING.md).
 
-
 ----
 
 ## License <a name="license"></a>
 
 Hyperledger Project source code files are made available under the Apache License, Version 2.0 (Apache-2.0), located in the [LICENSE](LICENSE) file. Hyperledger Project documentation files are made available under the Creative Commons Attribution 4.0 International License (CC-BY-4.0), available at http://creativecommons.org/licenses/by/4.0/.
-----
-
+ 
+ ---
+ 
 ## Credits and references
 
 1. Projects that inspired you
