@@ -94,9 +94,11 @@ Hyperledger Project source code files are made available under the Apache Licens
  
 ## Credits and references
 
-1. Projects that inspired you
-2. Related projects
-3. Books, papers, talks, or other sources that have meaningful impact or influence on this project
+1. https://github.com/feitnomore/hyperledger-fabric-kubernetes
+2. https://github.com/aidtechnology/lf-k8s-hlf-webinar
+3. https://github.com/aidtechnology/hgf-k8s-workshop
+4. https://github.com/IBM/blockchain-network-on-kubernetes
+5. Books, papers, talks, or other sources that have meaningful impact or influence on this project
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
